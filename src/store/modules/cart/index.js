@@ -1,25 +1,25 @@
 
 const state = {
   cartItems: []
-};
+}
 
 const mutations = {
 
-};
+}
 
 const actions = {
 
-};
+}
 
 const getters = {
 
-};
+}
 
 const cartModule = {
   state,
-  mustations,
+  mutations,
   actions,
   getters
-};
+}
 
 export default cartModule;

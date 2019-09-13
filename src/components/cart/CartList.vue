@@ -39,10 +39,10 @@
 </template>
 
 <script>
-  export default {
-    name: 'CartList'
+export default {
+  name: 'CartList'
 
-  }
+}
 </script>
 
 <style scoped>
