@@ -1,7 +1,9 @@
 <template>
   <div>
     <h2 class="has-text-weight-bold">{{ productItem.title}}
-      <span class="tag
+      <span
+          @click="addCartItem(productItem)"
+          class="tag
           is-primary
           is-pulled-right
           has-text-white">
@@ -16,9 +18,22 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
   name: 'ProductListItem',
-  props: ['productItem']
+  props: ['productItem'],
+  methods: {
+    //mapActions directly passes the intended payload without the need to specify it
+    ...mapActions([
+      'addCartItem'
+    ])
+    // manual - map component method action to the store action
+    //& passing payload
+    // addCartItem(productItem) {
+    //   this.$store.dispatch('addCartItem', productItem);
+    // }
+  }
 }
 </script>
 
