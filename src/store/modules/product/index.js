@@ -11,7 +11,7 @@ const mutations = {
 };
 
 const actions = {
-  getProductItems ({ commit }) {
+  getProductItems ({commit}) {
     axios.get('/api/products')
       .then((response) => {
         // console.dir(`${JSON.stringify(response)}`)

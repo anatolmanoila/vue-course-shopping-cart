@@ -27,7 +27,6 @@ export default {
   },
   computed: {
     ...mapGetters([
-      // map this.productItems to this.$store.getters.productItems
       'productItems'
     ])
   },
